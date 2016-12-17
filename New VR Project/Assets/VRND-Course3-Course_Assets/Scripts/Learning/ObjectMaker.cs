@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ObjectMaker : MonoBehaviour {
 
-	public GameObject insertGameObjetHere;
+	public GameObject objectToCreate;
 
 	// Use this for initialization
 	void Start () {
 		//make object here
+		Object.Instantiate(objectToCreate, new Vector3(2, 4, 6), Quaternion.identity);
 	}
 	
 	// Update is called once per frame
