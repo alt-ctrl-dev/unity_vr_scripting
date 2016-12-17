@@ -10,7 +10,7 @@ public class ObjectMaker : MonoBehaviour {
 	void Start () {
 		//make object here
 		for (int i = 0; i < 1000; i++) {
-			Object.Instantiate(objectToCreate, new Vector3(i, 4, 6), Quaternion.identity);
+			Object.Instantiate(objectToCreate, new Vector3(2, i, 6), Quaternion.identity);
 		}
 	}
 	
