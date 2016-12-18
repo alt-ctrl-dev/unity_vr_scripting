@@ -33,3 +33,5 @@ New VR Project/ProjectSettings/
 New VR Project/Temp/
 New VR Project/Assets/Plugins/
 New VR Project/Assets/GoogleVR/
+New VR Project/obj
+GvrIgnoreManifestMergeCheck.txt
