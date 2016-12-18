@@ -9,8 +9,11 @@ public class ManyObjectMaker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//make object here
-		for (int i = 0; i < 1000; i++) {
-			Object.Instantiate(objectToCreate, new Vector3(i, 4, 6), Quaternion.identity);
+		for (int i = 0; i < 50; i++) {
+			//Object.Instantiate(objectToCreate, new Vector3(i, 4, 6), Quaternion.identity);
+			GameObject newSeagull = Object.Instantiate(objectToCreate, new Vector3(i, 0, 0), Quaternion.identity);
+			Renderer objectRenderer = newSeagull.GetComponentInChildren<Renderer> ();
+			objectRenderer.material.color = Color.white * Random.value;
 		}
 	}
 
