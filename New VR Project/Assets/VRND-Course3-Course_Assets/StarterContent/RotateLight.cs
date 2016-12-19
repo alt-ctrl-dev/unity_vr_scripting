@@ -12,7 +12,10 @@ public class RotateLight : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        directionalLight.transform.Rotate(0, Time.deltaTime, 0);
-	}
+	void Update ()
+    {
+        Quaternion startRotation = Quaternion.Euler(50f, 30f, 0);
+        Quaternion endRotation = Quaternion.Euler(200f, 30f, 0);
+        directionalLight.transform.rotation = Quaternion.Slerp(startRotation, endRotation, Time.time / 20f);
+    }
 }
